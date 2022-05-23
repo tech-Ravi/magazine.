@@ -3,6 +3,9 @@
 Looking for the most popular magazines from around the world? They’re all on Magazine, the world’s largest and most-loved digital magazine.
 
 ----------------------------------------------------------
+## Demo 🗽
+
+[![Demo](https://img.shields.io/badge/APK-Magazine%20Apk-brightgreen)](https://drive.google.com/drive/folders/1s21F-txc0-SSvrzt92llC8Bx2kVs9IN3?usp=sharing)
 ----------------------------------------------------------
 
 
@@ -57,9 +60,7 @@ Coming soon...
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-## Demo 🗽
 
-[![Demo](https://img.shields.io/badge/APK-Magazine%20Apk-brightgreen)](https://drive.google.com/drive/folders/1s21F-txc0-SSvrzt92llC8Bx2kVs9IN3?usp=sharing)
 
 ----------------------------------------------
 ----------------------------------------------
