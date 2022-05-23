@@ -53,17 +53,41 @@ Flutter, Dart,Android SDK, Java, XML and Git...
 
 ## Screenshots 🫵🏻
 
-Coming soon...
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+<table>
+  <tr>
+    <td></td>
+     <td></td>
+     <td></td>
+     
+  </tr>
+  <tr>
+    <td><img src="https://github.com/tech-Ravi/magazine./blob/master/android/app/src/main/res/drawable/Screenshot_20220524-003617.jpg" width=270 height=500></td>
+    <td><img src="https://github.com/tech-Ravi/magazine./blob/master/android/app/src/main/res/drawable/Screenshot_20220524-003707.jpg" width=270 height=500></td>
+    <td><img src="https://github.com/tech-Ravi/magazine./blob/master/android/app/src/main/res/drawable/Screenshot_20220524-003700.jpg" width=270 height=500></td>
+ 
+ </table>
+ 
+ <table>
+  <tr>
+    <td></td>
+     <td></td>
+     <td></td>
+     
+  </tr>
+  <tr>
+    <td><img src="https://github.com/tech-Ravi/magazine./blob/master/android/app/src/main/res/drawable/Screenshot_20220524-003718.jpg" width=270 height=500></td>
+    <td><img src="https://github.com/tech-Ravi/magazine./blob/master/android/app/src/main/res/drawable/Screenshot_20220524-003726.jpg" width=270 height=500></td>
+    <td><img src="https://github.com/tech-Ravi/magazine./blob/master/android/app/src/main/res/drawable/Screenshot_20220518-210830.jpg" width=270 height=500></td>
+ 
+ </table>
 
 
 
 ----------------------------------------------
 ----------------------------------------------
+
+
+
 
 
 # Hi, I'm Ravi! 👋
