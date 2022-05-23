@@ -1,26 +1,19 @@
-# Flutter Magazine
+# Magazine. 📚
 
-Online Magazine store design made in Flutter and inspired by Dribble shot by Daniel Moss. [Design Inspiration](https://dribbble.com/shots/6654840-Magazine-Store)
+Looking for the most popular magazines from around the world? They’re all on Magazine, the world’s largest and most-loved digital magazine.
 
-## Screenshots
+----------------------------------------------------------
+----------------------------------------------------------
 
-<table>
-  <thead>
-    <tr><th align="center">                    Home Screen                </th><th align="center">                    Detail Screen                 </th>  <th align="center">                    About Screen                 </th></tr>
-  </thead>
-  <tbody>
-    <tr><td align="center"> <img src="assets/images/results/screenshot02.png" alt="Home Screen" class="absent" /> </td><td align="center"> <img src="assets/images/results/screenshot01.png" alt="Detail Screen" class="absent" /> </td><td align="center"> <img src="assets/images/results/01.gif" alt="Detail Screen  " class="absent" /> </td></tr>
-  </tbody>
-</table>
 
-## Installation
+## Installation 👈🏻
 
 **Step 1:**
 
 Download or clone this repo by using the link below:
 
 ```bash
-https://github.com/csi-vitpune/FlutterMagazine.git
+https://github.com/tech-Ravi/Parenthood.git
 ```
 
 **Step 2:**
@@ -39,7 +32,7 @@ Attach android or iOS device and execute following command:
 flutter run 
 ```
 
-## Project Structure
+## Project Structure ✍🏻
 
 ```
 FlutterMagazine/
@@ -52,8 +45,26 @@ FlutterMagazine/
    |- widgets
 |- test
 ```
+## 🛠 Skills 🛠
+Flutter, Dart,Android SDK, Java, XML and Git...
 
-## Contributing
+## Screenshots 🫵🏻
+
+Coming soon...
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+## Demo 🗽
+
+Coming Soon...
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+----------------------------------------------
+----------------------------------------------
+## Contributing 🕺
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ##  Contribution
@@ -104,4 +115,24 @@ Create Merge Request
 ```bash
 By navigating to Create New Merge request
 ```
+
+----------------
+----------------
+
+# Hi, I'm Ravi! 👋
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](http://ravi-prakash-jaiswal-1.jimdosite.com/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](http://www.linkedin.com/in/ravi-prakash01)
+
+
+## Support 🕺🕺
+
+For support, email tech.ravi03@gmail.com
+
+
+## Feedback 🎃
+
+If you have any feedback, please reach out to us at tech.ravi03@gmail.com
 
