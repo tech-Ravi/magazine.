@@ -6,6 +6,9 @@ Looking for the most popular magazines from around the world? They’re all on M
 ## Demo 🗽
 
 [![Demo](https://img.shields.io/badge/APK-Magazine%20Apk-brightgreen)](https://drive.google.com/drive/folders/1s21F-txc0-SSvrzt92llC8Bx2kVs9IN3?usp=sharing)
+
+<img src="https://github.com/tech-Ravi/magazine./blob/master/android/app/src/main/res/drawable/magazinegif.gif" width="270" height="500" />
+
 ----------------------------------------------------------
 
 
