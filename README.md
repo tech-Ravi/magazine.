@@ -59,8 +59,7 @@ Coming soon...
 
 ## Demo 🗽
 
-Coming Soon...
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+[![Demo](https://img.shields.io/badge/APK-Magazine%20Apk-brightgreen)](https://drive.google.com/drive/folders/1s21F-txc0-SSvrzt92llC8Bx2kVs9IN3?usp=sharing)
 
 ----------------------------------------------
 ----------------------------------------------
