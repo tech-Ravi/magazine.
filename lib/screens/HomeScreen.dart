@@ -8,8 +8,11 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.white54,
         body: SafeArea(
+            child: SingleChildScrollView(
+                child: Container(
+          height: MediaQuery.of(context).size.height,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -39,6 +42,6 @@ class HomeScreen extends StatelessWidget {
               )
             ],
           ),
-        ));
+        ))));
   }
 }

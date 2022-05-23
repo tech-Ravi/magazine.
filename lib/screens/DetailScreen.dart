@@ -109,10 +109,8 @@ class DetailScreen extends StatelessWidget {
             ),
             Text(
               data['title'],
-              style: Theme.of(context)
-                  .textTheme
-                  .headline5
-                  .copyWith(color: Colors.black, fontWeight: FontWeight.bold),
+              style: Theme.of(context).textTheme.headline5.copyWith(
+                  color: Colors.green.shade900, fontWeight: FontWeight.bold),
             ),
             SizedBox(
               height: 32.0,
@@ -151,11 +149,11 @@ class DetailScreen extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Text("\$ ${data['price']}",
-                          style: Theme.of(context)
-                              .textTheme
-                              .headline6
-                              .copyWith(fontWeight: FontWeight.bold)),
+                      Text("\u{20B9}${data['price']}/-",
+                          style: Theme.of(context).textTheme.headline6.copyWith(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.green.shade900,
+                              )),
                       SizedBox(height: 4.0),
                       Text("without delivery",
                           style: Theme.of(context).textTheme.caption.copyWith(
@@ -168,7 +166,7 @@ class DetailScreen extends StatelessWidget {
                     icon: Icons.bookmark_border,
                     borderColor: Colors.grey[200],
                     iconSize: 24.0,
-                    iconColor: Colors.black,
+                    iconColor: Colors.green.shade900,
                   ),
                   SizedBox(width: 16.0),
                   CustomIconButton(
@@ -176,7 +174,7 @@ class DetailScreen extends StatelessWidget {
                     borderColor: Colors.black,
                     iconSize: 24.0,
                     iconColor: Colors.white,
-                    backgroundColor: Colors.black,
+                    backgroundColor: Colors.green.shade900,
                   ),
                 ],
               ),

@@ -9,7 +9,7 @@ class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     _launchURLFACEBOOK() async {
-      const url = 'https://www.facebook.com/kechamadavipul.uthaiah/';
+      const url = 'https://www.facebook.com/';
       if (await canLaunch(url)) {
         await launch(url);
       } else {
@@ -18,7 +18,7 @@ class AboutPage extends StatelessWidget {
     }
 
     _launchTwitter() async {
-      const url = 'https://twitter.com/UthaiahVipul';
+      const url = 'https://twitter.com/';
 
       if (await canLaunch(url)) {
         await launch(url);
@@ -28,7 +28,7 @@ class AboutPage extends StatelessWidget {
     }
 
     _lanchInsta() async {
-      const url = 'https://www.instagram.com//vipuluthaiah/';
+      const url = 'https://www.instagram.com/';
 
       if (await canLaunch(url)) {
         await launch(url);
@@ -39,7 +39,7 @@ class AboutPage extends StatelessWidget {
 
     _lanchemail() async {
       const url =
-          'mailto:drealtic.com@gmail.com?subject=Support mail=Hi,If you are facing any problem u can reach us out just write u r issue';
+          'mailto:tech.ravi03@gmail.com?subject=Support mail=Hi,If you are facing any problem u can reach us out just write u r issue';
 
       if (await canLaunch(url)) {
         await launch(url);
@@ -49,250 +49,266 @@ class AboutPage extends StatelessWidget {
     }
 
     return Scaffold(
-      backgroundColor: mC,
-      body: Stack(
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(25),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        backgroundColor: mC,
+        body: SafeArea(
+          child: Stack(
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.all(10),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
-                    InkWell(
-                        onTap: () {
-                          Navigator.pop(context);
-                        },
-                        child: NMButton(
-                          icon: Icons.arrow_back,
-                        )),
-                    SizedBox(width: 25),
-                    InkWell(
-                      child: NMButton(icon: FontAwesomeIcons.exclamationCircle),
-                      onTap: () {},
-                    ),
-                  ],
-                ),
-                AvatarImage(),
-                Column(
-                  children: [
-                    Center(
-                      child: Text(
-                        'Magazine',
-                        style: TextStyle(
-                            fontSize: 30, fontWeight: FontWeight.w700),
-                      ),
-                    ),
-                    Center(
-                      child: Text(
-                        ' About App ',
-                        style: TextStyle(
-                            fontSize: 27, fontWeight: FontWeight.w700),
-                      ),
-                    ),
-                  ],
-                ),
-                Text(
-                  'By U r name',
-                  style: TextStyle(fontWeight: FontWeight.w200),
-                ),
-                SizedBox(height: 15),
-                Flexible(
-                  child: Text(
-                    "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum ",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 18),
-                  ),
-                ),
-                SizedBox(height: 9),
-                Center(
-                  child: Text(
-                    'CONTACT US',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                  ),
-                ),
-                SizedBox(height: 9),
-
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    InkWell(
-                        child: NMButton(icon: FontAwesomeIcons.facebookF),
-                        onTap: () async {
-                          _launchURLFACEBOOK();
-                        }),
-                    SizedBox(width: 25),
-                    InkWell(
-                      child: NMButton(icon: FontAwesomeIcons.twitter),
-                      onTap: () async {
-                        _launchTwitter();
-                      },
-                    ),
-                    SizedBox(width: 25),
-                    InkWell(
-                      child: NMButton(icon: FontAwesomeIcons.instagram),
-                      onTap: () async {
-                        _lanchInsta();
-                      },
-                    ),
-                    SizedBox(width: 25),
-                    InkWell(
-                      child: NMButton(icon: FontAwesomeIcons.envelope),
-                      onTap: () async {
-                        _lanchemail();
-                      },
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: 14,
-                ),
-                // Row(
-                //   children: <Widget>[
-                //     SocialBox(
-                //         icon: FontAwesomeIcons.dribbble,
-                //         count: '35',
-                //         category: 'shots'),
-                //     SizedBox(width: 15),
-                //     SocialBox(
-                //         icon: FontAwesomeIcons.userAlt,
-                //         count: '1.2k',
-                //         category: 'followers'),
-                //   ],
-                // ),
-
-                SizedBox(height: 2),
-              ],
-            ),
-          ),
-          DraggableScrollableSheet(
-            initialChildSize: 0.17,
-            minChildSize: 0.07,
-            maxChildSize: 0.4,
-            builder: (BuildContext context, scroll) {
-              return Container(
-                decoration: nMbox,
-                child: ListView(
-                  controller: scroll,
-                  children: <Widget>[
-                    Center(
-                      child: Column(
-                        children: <Widget>[
-                          Padding(
-                            padding: const EdgeInsets.only(
-                              top: 1,
-                            ),
-                            child: Icon(Icons.share, color: fCL),
-                          ),
-                          Text(
-                            'Share',
-                            style: TextStyle(
-                                fontSize: 28, fontWeight: FontWeight.w700),
-                          ),
-                          SizedBox(height: 15),
-                          Text(
-                            'Swipe Up To Share This App',
-                            textAlign: TextAlign.center,
-                          ),
-                          SizedBox(height: 35),
-                          Container(
-                            width: 225,
-                            padding: EdgeInsets.all(10),
-                            decoration: nMboxInvert,
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: <Widget>[
-                                InkWell(
-                                  child: Icon(FontAwesomeIcons.facebookF,
-                                      color: fCL),
-                                  onTap: () {
-                                    final RenderBox box =
-                                        context.findRenderObject();
-                                    Share.share(
-                                        "Check Out Magazine App !https://github.com/csi-vitpune/FlutterMagazine",
-                                        subject:
-                                            "https://github.com/csi-vitpune/FlutterMagazine",
-                                        sharePositionOrigin:
-                                            box.localToGlobal(Offset.zero) &
-                                                box.size);
-                                  },
-                                ),
-                                InkWell(
-                                  child: Icon(FontAwesomeIcons.twitter,
-                                      color: fCL),
-                                  onTap: () {
-                                    final RenderBox box =
-                                        context.findRenderObject();
-                                    Share.share(
-                                        "Check Out Magazine App ! https://github.com/csi-vitpune/FlutterMagazine",
-                                        subject:
-                                            "https://github.com/csi-vitpune/FlutterMagazine",
-                                        sharePositionOrigin:
-                                            box.localToGlobal(Offset.zero) &
-                                                box.size);
-                                  },
-                                ),
-                                InkWell(
-                                  child: Icon(FontAwesomeIcons.instagram,
-                                      color: fCL),
-                                  onTap: () {
-                                    final RenderBox box =
-                                        context.findRenderObject();
-                                    Share.share(
-                                        "Check Out Magazine App   ! https://github.com/csi-vitpune/FlutterMagazine",
-                                        subject:
-                                            "https://github.com/csi-vitpune/FlutterMagazine",
-                                        sharePositionOrigin:
-                                            box.localToGlobal(Offset.zero) &
-                                                box.size);
-                                  },
-                                ),
-                                InkWell(
-                                  child: Icon(FontAwesomeIcons.whatsapp,
-                                      color: fCL),
-                                  onTap: () {
-                                    final RenderBox box =
-                                        context.findRenderObject();
-                                    Share.share(
-                                      "Check Out Magazine App            !https://github.com/csi-vitpune/FlutterMagazine ",
-                                      subject: "Share This App",
-                                      sharePositionOrigin:
-                                          box.localToGlobal(Offset.zero) &
-                                              box.size,
-                                    );
-                                  },
-                                ),
-                              ],
-                            ),
-                          ),
-                          SizedBox(height: 25),
-                          FaIcon(
-                            FontAwesomeIcons.copy,
-                            color: Colors.pink.shade800,
-                          ),
-                          InkWell(
-                            child: Text(
-                              'Copy link',
-                            ),
-                            onTap: () async {
-                              Clipboard.setData(new ClipboardData(
-                                  text:
-                                      "Check Out Magazine App ! https://github.com/csi-vitpune/FlutterMagazine"));
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        InkWell(
+                            onTap: () {
+                              Navigator.pop(context);
                             },
+                            child: NMButton(
+                              icon: Icons.arrow_back,
+                            )),
+                        SizedBox(width: 25),
+                        InkWell(
+                          child: NMButton(
+                              icon: FontAwesomeIcons.exclamationCircle),
+                          onTap: () {},
+                        ),
+                      ],
+                    ),
+                    AvatarImage(),
+                    Column(
+                      children: [
+                        Center(
+                          child: Text(
+                            'Magazine.',
+                            style: TextStyle(
+                                fontSize: 30, fontWeight: FontWeight.w700),
                           ),
-                        ],
+                        ),
+                        Center(
+                          child: Text(
+                            ' About App ',
+                            style: TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.w700),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Text(
+                      'By Ravi Prakash',
+                      style: TextStyle(fontWeight: FontWeight.w200),
+                    ),
+                    SizedBox(height: 15),
+                    Flexible(
+                      child: Text(
+                        "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum ",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(fontSize: 13, color: Colors.grey),
                       ),
-                    )
+                    ),
+                    SizedBox(height: 9),
+                    Center(
+                      child: Text(
+                        'CONTACT US',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    SizedBox(height: 9),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        InkWell(
+                            child: NMButton(icon: FontAwesomeIcons.facebookF),
+                            onTap: () async {
+                              _launchURLFACEBOOK();
+                            }),
+                        SizedBox(width: 25),
+                        InkWell(
+                          child: NMButton(icon: FontAwesomeIcons.twitter),
+                          onTap: () async {
+                            _launchTwitter();
+                          },
+                        ),
+                        SizedBox(width: 25),
+                        InkWell(
+                          child: NMButton(icon: FontAwesomeIcons.instagram),
+                          onTap: () async {
+                            _lanchInsta();
+                          },
+                        ),
+                        SizedBox(width: 25),
+                        InkWell(
+                          child: NMButton(icon: FontAwesomeIcons.envelope),
+                          onTap: () async {
+                            _lanchemail();
+                          },
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 14,
+                    ),
+                    // Row(
+                    //   children: <Widget>[
+                    //     SocialBox(
+                    //         icon: FontAwesomeIcons.dribbble,
+                    //         count: '35',
+                    //         category: 'shots'),
+                    //     SizedBox(width: 15),
+                    //     SocialBox(
+                    //         icon: FontAwesomeIcons.userAlt,
+                    //         count: '1.2k',
+                    //         category: 'followers'),
+                    //   ],
+                    // ),
+                    SizedBox(height: 2),
                   ],
                 ),
-              );
-            },
-          )
-        ],
-      ),
-    );
+              ),
+              DraggableScrollableSheet(
+                initialChildSize: 0.20,
+                minChildSize: 0.07,
+                maxChildSize: 0.4,
+                builder: (BuildContext context, scroll) {
+                  return Container(
+                    decoration: nMbox,
+                    child: ListView(
+                      controller: scroll,
+                      children: <Widget>[
+                        Center(
+                          child: Column(
+                            children: <Widget>[
+                              SizedBox(height: 15),
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                  top: 1,
+                                ),
+                                child: Icon(Icons.share, color: fCL),
+                              ),
+                              Text(
+                                'Share',
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.w700),
+                              ),
+                              SizedBox(height: 15),
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                  top: 1,
+                                ),
+                                child: RotatedBox(
+                                  quarterTurns: 3,
+                                  child: Icon(
+                                    Icons.double_arrow_rounded,
+                                    color: fCL,
+                                    size: 25,
+                                  ),
+                                ),
+                              ),
+                              Text(
+                                'Swipe Up',
+                                textAlign: TextAlign.center,
+                              ),
+                              SizedBox(height: 35),
+                              Container(
+                                width: 225,
+                                padding: EdgeInsets.all(10),
+                                decoration: nMboxInvert,
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    InkWell(
+                                      child: Icon(FontAwesomeIcons.facebookF,
+                                          color: fCL),
+                                      onTap: () {
+                                        final RenderBox box =
+                                            context.findRenderObject();
+                                        Share.share(
+                                            "Check Out Magazine App !https://github.com/csi-vitpune/FlutterMagazine",
+                                            subject:
+                                                "https://github.com/csi-vitpune/FlutterMagazine",
+                                            sharePositionOrigin:
+                                                box.localToGlobal(Offset.zero) &
+                                                    box.size);
+                                      },
+                                    ),
+                                    InkWell(
+                                      child: Icon(FontAwesomeIcons.twitter,
+                                          color: fCL),
+                                      onTap: () {
+                                        final RenderBox box =
+                                            context.findRenderObject();
+                                        Share.share(
+                                            "Check Out Magazine App ! https://github.com/csi-vitpune/FlutterMagazine",
+                                            subject:
+                                                "https://github.com/csi-vitpune/FlutterMagazine",
+                                            sharePositionOrigin:
+                                                box.localToGlobal(Offset.zero) &
+                                                    box.size);
+                                      },
+                                    ),
+                                    InkWell(
+                                      child: Icon(FontAwesomeIcons.instagram,
+                                          color: fCL),
+                                      onTap: () {
+                                        final RenderBox box =
+                                            context.findRenderObject();
+                                        Share.share(
+                                            "Check Out Magazine App   ! https://github.com/csi-vitpune/FlutterMagazine",
+                                            subject:
+                                                "https://github.com/csi-vitpune/FlutterMagazine",
+                                            sharePositionOrigin:
+                                                box.localToGlobal(Offset.zero) &
+                                                    box.size);
+                                      },
+                                    ),
+                                    InkWell(
+                                      child: Icon(FontAwesomeIcons.whatsapp,
+                                          color: fCL),
+                                      onTap: () {
+                                        final RenderBox box =
+                                            context.findRenderObject();
+                                        Share.share(
+                                          "Check Out Magazine App            !https://github.com/csi-vitpune/FlutterMagazine ",
+                                          subject: "Share This App",
+                                          sharePositionOrigin:
+                                              box.localToGlobal(Offset.zero) &
+                                                  box.size,
+                                        );
+                                      },
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              SizedBox(height: 25),
+                              FaIcon(
+                                FontAwesomeIcons.copy,
+                                color: Colors.pink.shade800,
+                              ),
+                              InkWell(
+                                child: Text(
+                                  'Copy link',
+                                ),
+                                onTap: () async {
+                                  Clipboard.setData(new ClipboardData(
+                                      text:
+                                          "Check Out Magazine App ! https://github.com/csi-vitpune/FlutterMagazine"));
+                                },
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  );
+                },
+              )
+            ],
+          ),
+        ));
   }
 }
 

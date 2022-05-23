@@ -30,6 +30,7 @@ class CustomTabBarView extends StatelessWidget {
                         alignment: Alignment.centerLeft,
                         child: Text(
                           "Popular",
+                          style: TextStyle(color: Colors.green.shade900),
                         ),
                       ),
                     ),
@@ -38,6 +39,7 @@ class CustomTabBarView extends StatelessWidget {
                         alignment: Alignment.centerLeft,
                         child: Text(
                           "Newest",
+                          style: TextStyle(color: Colors.green.shade900),
                         ),
                       ),
                     ),

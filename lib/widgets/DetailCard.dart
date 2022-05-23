@@ -33,10 +33,10 @@ class DetailCard extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5),
                   image: DecorationImage(
-                      image: AssetImage(poster), fit: BoxFit.cover),
+                      image: AssetImage(poster), fit: BoxFit.fill),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.grey.withOpacity(0.3),
+                      color: Colors.grey.withOpacity(0.9),
                       spreadRadius: 1,
                       blurRadius: 20,
                       offset: Offset(0, 20), // changes position of shadow
@@ -60,10 +60,12 @@ class DetailCard extends StatelessWidget {
                         children: <Widget>[
                           Text(
                             title,
-                            style:
-                                Theme.of(context).textTheme.subtitle1.copyWith(
-                                      fontWeight: FontWeight.bold,
-                                    ),
+                            style: Theme.of(context)
+                                .textTheme
+                                .subtitle1
+                                .copyWith(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.green.shade900),
                           ),
                           SizedBox(
                             height: 12.0,
@@ -81,6 +83,7 @@ class DetailCard extends StatelessWidget {
                       ),
                       Icon(
                         Icons.bookmark_border,
+                        color: Colors.green.shade900,
                       )
                     ],
                   ),
@@ -102,13 +105,15 @@ class DetailCard extends StatelessWidget {
                       Text(
                         '$rating',
                         style: Theme.of(context).textTheme.subtitle2.copyWith(
-                              fontWeight: FontWeight.bold,
-                            ),
+                            fontWeight: FontWeight.bold,
+                            color: Colors.green.shade900),
                       ),
                       Spacer(),
                       Text(
-                        '\$$price',
+                        '\u{20B9}$price/-',
                         style: Theme.of(context).textTheme.subtitle2.copyWith(
+                              fontSize: 17,
+                              color: Colors.green.shade900,
                               fontWeight: FontWeight.bold,
                             ),
                       ),

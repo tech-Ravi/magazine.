@@ -27,13 +27,15 @@ class VerticalCard extends StatelessWidget {
                 width: 150.0,
                 height: 200.0,
                 decoration: BoxDecoration(
+                  color: Colors.green.shade900,
                   borderRadius: BorderRadius.circular(8),
                   image: DecorationImage(
+                    fit: BoxFit.cover,
                     image: AssetImage(poster),
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.grey.withOpacity(0.2),
+                      color: Colors.grey.withOpacity(0.5),
                       spreadRadius: 2,
                       blurRadius: 20,
                       offset: Offset(0, 15), // changes position of shadow
@@ -45,10 +47,8 @@ class VerticalCard extends StatelessWidget {
             SizedBox(height: 16.0),
             Text(
               title,
-              style: Theme.of(context)
-                  .textTheme
-                  .subtitle1
-                  .copyWith(fontWeight: FontWeight.bold),
+              style: Theme.of(context).textTheme.subtitle1.copyWith(
+                  fontWeight: FontWeight.bold, color: Colors.green.shade900),
             ),
             SizedBox(height: 8.0),
             Text(

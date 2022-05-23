@@ -29,7 +29,7 @@ class _MainAppState extends State<MainApp> {
         statusBarColor: Colors.white, statusBarBrightness: Brightness.light));
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Magazine.',
+      title: 'Magazine.in',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -66,24 +66,24 @@ class _MainAppState extends State<MainApp> {
                       items: [
                         BottomNavigationBarItem(
                           icon: Icon(
-                            Icons.widgets,
+                            Icons.all_inclusive_sharp,
                             size: 30.0,
                           ),
-                          label: 'Store',
+                          label: 'Home',
                         ),
                         BottomNavigationBarItem(
                           icon: Icon(
-                            Icons.bookmark_border,
+                            Icons.favorite,
                             size: 30.0,
                           ),
                           label: 'Favourite',
                         ),
                         BottomNavigationBarItem(
                           icon: Icon(
-                            Icons.shopping_basket,
+                            Icons.person,
                             size: 30.0,
                           ),
-                          label: 'Cart',
+                          label: 'Account',
                         ),
                       ])),
             ),
