@@ -19,7 +19,7 @@ Looking for the most popular magazines from around the world? They’re all on M
 Download or clone this repo by using the link below:
 
 ```bash
-https://github.com/tech-Ravi/Parenthood.git
+https://github.com/tech-Ravi/magazine..git
 ```
 
 **Step 2:**
